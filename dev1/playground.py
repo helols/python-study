@@ -48,7 +48,7 @@ example = "apples"
 
 ex1 = example[:3]  # app 0~N (:excluded)
 ex2 = example[2:5]  # ple (included:excluded)
-ex3 = example[3:]  #les N~End  (included:)
+ex3 = example[3:]  # les N~End  (included:)
 
 print(ex1)
 print(ex2)
@@ -126,3 +126,59 @@ print(20 <= 6)
 print(5 > 6)
 print(3 == 3)
 print(2 >= 1)
+
+# day 4
+
+ex1 = True and True  # True
+ex2 = True and False  # false
+ex3 = False and False  # False
+ex4 = True or True  # True
+ex5 = True or False  # True
+ex6 = False or False  # False
+ex7 = not True  # False
+ex8 = not False  # True
+ex9 = not False and not True or False
+step1 = True and False or False
+step2 = False or False
+result = False
+
+print(7 > 6 and 6 >= 6)
+print(3 != 3 or 4 == 4)
+print(not 5 > 2)
+print(not 5 < 3 and True or 6 <= 6 and not False)
+
+if 5 != 6:
+    print("5 does not equal 6")
+
+if 1 == 2:
+    print("1 equals 2.")
+else:
+    print("1 does not equal 2!")
+
+if 1 == 2:
+    print("Don't print this.")
+elif 1 != 2:
+    print("Print this.")
+else:
+    print("Don't rint this either.")
+
+
+if 1 == 2:
+    print("Don't print this.")
+elif 1 != 1:
+    print("Don't print this either.")
+elif 5 <= 19:
+    print("end elif statement.")
+else:
+    print("This will not be printed.")
+
+name = input("Enter your name")
+nameLen = len(name)
+if nameLen < 4:
+    print("Your name is less than 4 characters")
+elif nameLen < 10:
+    print("Your name at least 4 characters and less than 10 characters")
+else:
+    print("Your name is very long")
+
+
